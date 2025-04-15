@@ -1,1 +1,66 @@
+Software Stack and Design Particulars
+Software Stack
+Frontend Technologies
+The portfolio is built using foundational web technologies and modern design practices:
+•	HTML5: Provides the semantic structure and content of the web pages.
+•	CSS3: Used extensively for layout, animations, and responsive styling.
+•	JavaScript (Vanilla): Adds interactivity like animated scrolling, typewriter effects, and dynamic form handling.
+•	Font Awesome 6.4.0: Integrated via CDN for scalable icons across the UI (e.g., social icons, contact icons).
+•	Responsive Design: Achieved using media queries and CSS grid/flex layouts to ensure compatibility across various screen sizes.
+There is no use of frontend frameworks like React or Vue in the current version, though some familiarity with React is showcased in the projects section (e.g., Weather App).
+Backend Technologies
+Currently, there is no backend framework integrated. The portfolio is a static website, and backend functionalities like authentication or database interactions are not required or implemented.
+However, JavaScript handles some pseudo-dynamic behavior:
+•	Typewriter animation for the hero name.
+•	Scroll-triggered animations using IntersectionObserver.
+•	Form submission feedback via in-page JavaScript (though no backend data processing is done).
+If backend capabilities were to be added, possible technologies include:
+•	Node.js or Flask (as per developer's skills)
+•	RESTful API design for handling contact form submissions
+•	Token-based authentication (e.g., JWT) if access control is needed
+Database and File Storage
+As a static site, no database is used. In a future version, databases like MongoDB (NoSQL) or PostgreSQL (SQL) could be integrated for:
+•	Storing contact form entries
+•	Project data management via CMS
+•	User authentication for admin access
+For deployment or file storage, GitHub Pages is likely used (per GitHub link in the footer), which supports static hosting.
+Additional Tools and Services
+•	EmailJS or Formspree (future scope): Could be integrated to enable email submissions from the contact form.
+•	GitHub: Source control and public project repository.
+•	Google Fonts or custom font libraries: Not explicitly shown, but likely used via 'Inter', 'Segoe UI', and 'Roboto' font fallbacks.
+
+Design Particulars
+User Roles and Access Control
+Currently, the portfolio is publicly accessible to all users with no role-based control.
+However, future enhancements may include:
+•	Admin Role: To manage content via a CMS
+•	Visitor Role: View-only access for recruiters or collaborators
+Key Functional Modules
+1.	Hero Section: First impression with animated name and call-to-action button.
+2.	About Section: Personal background and motivation.
+3.	Education Section: Academic history with timeline-style layout.
+4.	Skills Section: Categorized skill cards animated on scroll.
+5.	Projects Section: Highlighted projects with tags and interactive hover states.
+6.	Contact Section: Contact info and a functional form (currently static).
+7.	Footer: Social links and site navigation.
+Each module is styled and animated for interactivity, providing an engaging UX.
+System Architecture
+This is a Client-side only architecture, where:
+•	The browser renders HTML, CSS, and JS directly.
+•	All scripts run in the client’s environment.
+•	No API calls are made (yet), though there's provision in the design for integrating REST APIs (as seen in the Weather App project).
+UI/UX Design Decisions
+•	Modern Minimalist Aesthetic: Consistent use of clean typography, whitespace, and card layouts.
+•	Scroll-based Animations: Creates an engaging user experience with IntersectionObserver.
+•	Interactive Components: Hover effects on buttons, project cards, and skill icons.
+•	Responsive Layout: Navigation switches to mobile view with a hamburger menu under 768px.
+•	Animated Cursor and Background: Typewriter effect and gradient animations enhance visual appeal.
+Optional / Future Features
+•	Backend Integration for the contact form using Node.js/Express or Flask.
+•	CMS (e.g., Netlify CMS or Sanity.io) to dynamically manage projects and blog entries.
+•	Email Notifications for form submissions using services like EmailJS.
+•	Analytics using Google Analytics or Plausible to track user engagement.
+•	Blog/Updates Section to share insights or development logs.
+•	Dark Mode Toggle to improve accessibility and aesthetics.
+•	Progressive Web App (PWA) conversion for offline capabilities and installable features.
 
